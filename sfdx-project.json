@@ -3,11 +3,32 @@
 		{
 			"path": "src-temp",
 			"default": true
+		},
+		{
+			"path": "src/unlocked",
+			"package": "GroupsPackageUnlocked",
+			"versionName": "ver 0.1",
+			"versionNumber": "0.1.0.NEXT",
+			"default": false,
+			"versionDescription": "Testing packaging of public groups and queues in a standard pacakge"
+		},
+		{
+			"path": "src/unlocked-namespaced",
+			"package": "GroupsPackageNamespace",
+			"versionName": "ver 0.1",
+			"versionNumber": "0.1.0.NEXT",
+			"default": false,
+			"versionDescription": "Testing packaging of public groups and queues in a namespaced pacakge"
 		}
 	],
-	"name": "sfxx",
-	"namespace": "",
+	"name": "PackageGroups",
+	"namespace": "packocz",
 	"sfdcLoginUrl": "https://login.salesforce.com",
 	"sourceApiVersion": "60.0",
-	"packageAliases": {}
+	"packageAliases": {
+		"GroupsPackageUnlocked": "0Ho08000000PAxSCAW",
+		"GroupsPackageNamespace": "0Ho08000000PAxcCAG",
+		"GroupsPackageUnlocked@0.1.0-2": "04t08000000UK2YAAW",
+		"GroupsPackageNamespace@0.1.0-1": "04t08000000UK2TAAW"
+	}
 }
